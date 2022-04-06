@@ -15,4 +15,10 @@ it('renders without crashing', () => {
     div
   );
   ReactDOM.unmountComponentAtNode(div);
+}),
+
+test('Test1:', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Abbas/i);
+  expect(linkElement).toBeInTheDocument();
 });
