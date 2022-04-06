@@ -1,9 +1,6 @@
 name: CI
 on: push
 jobs:
-
-  
-    
   test:
     runs-on: ubuntu-latest
     steps:
@@ -35,11 +32,6 @@ jobs:
       - name: Run the tests
         run: npm test
 
-      run-linters:
-    name: Lint Frontend
-    runs-on: ubuntu-latest
-
-      steps:
-      - name: Lint Code
+      - name: Run the linting
         run: npm eslint
-    
+        
