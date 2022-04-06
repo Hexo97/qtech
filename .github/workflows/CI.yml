@@ -34,11 +34,12 @@ jobs:
       # Finally, run our tests
       - name: Run the tests
         run: npm test
-  run-linters:
+
+      run-linters:
     name: Lint Frontend
     runs-on: ubuntu-latest
 
-    steps:
-    - name: Lint Code
-      run: npm eslint
+      steps:
+      - name: Lint Code
+        run: npm eslint
     
