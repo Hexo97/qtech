@@ -1,16 +1,33 @@
 {
   "files": {
-    "main.css": "/qtech/static/css/main.073c9b0a.css",
-    "main.js": "/qtech/static/js/main.cedd5565.js",
-    "static/js/787.5ade87c0.chunk.js": "/qtech/static/js/787.5ade87c0.chunk.js",
-    "static/media/logo.svg": "/qtech/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/qtech/static/css/main.5eb9f36e.chunk.css",
+    "main.js": "/qtech/static/js/main.0c662366.chunk.js",
+    "main.js.map": "/qtech/static/js/main.0c662366.chunk.js.map",
+    "runtime-main.js": "/qtech/static/js/runtime-main.ded44362.js",
+    "runtime-main.js.map": "/qtech/static/js/runtime-main.ded44362.js.map",
+    "static/js/2.20842fab.chunk.js": "/qtech/static/js/2.20842fab.chunk.js",
+    "static/js/2.20842fab.chunk.js.map": "/qtech/static/js/2.20842fab.chunk.js.map",
     "index.html": "/qtech/index.html",
-    "main.073c9b0a.css.map": "/qtech/static/css/main.073c9b0a.css.map",
-    "main.cedd5565.js.map": "/qtech/static/js/main.cedd5565.js.map",
-    "787.5ade87c0.chunk.js.map": "/qtech/static/js/787.5ade87c0.chunk.js.map"
+    "precache-manifest.4d365cc80235a73bb57ce226b1ed32ec.js": "/qtech/precache-manifest.4d365cc80235a73bb57ce226b1ed32ec.js",
+    "service-worker.js": "/qtech/service-worker.js",
+    "static/css/main.5eb9f36e.chunk.css.map": "/qtech/static/css/main.5eb9f36e.chunk.css.map",
+    "static/js/2.20842fab.chunk.js.LICENSE.txt": "/qtech/static/js/2.20842fab.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/qtech/static/media/illustration-section-02.63d0555d.svg",
+    "static/media/feature-tile-icon-01.svg": "/qtech/static/media/feature-tile-icon-01.0f9928d7.svg",
+    "static/media/feature-tile-icon-02.svg": "/qtech/static/media/feature-tile-icon-02.bd39f304.svg",
+    "static/media/feature-tile-icon-03.svg": "/qtech/static/media/feature-tile-icon-03.66f37ba5.svg",
+    "static/media/feature-tile-icon-04.svg": "/qtech/static/media/feature-tile-icon-04.836acd10.svg",
+    "static/media/feature-tile-icon-05.svg": "/qtech/static/media/feature-tile-icon-05.fa9ba00b.svg",
+    "static/media/feature-tile-icon-06.svg": "/qtech/static/media/feature-tile-icon-06.6a177696.svg",
+    "static/media/features-split-image-01.png": "/qtech/static/media/features-split-image-01.d9cb99ce.png",
+    "static/media/features-split-image-02.png": "/qtech/static/media/features-split-image-02.3c569239.png",
+    "static/media/features-split-image-03.png": "/qtech/static/media/features-split-image-03.87e4d053.png",
+    "static/media/logo.svg": "/qtech/static/media/logo.2810a88b.svg"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.cedd5565.js"
+    "static/js/runtime-main.ded44362.js",
+    "static/js/2.20842fab.chunk.js",
+    "static/css/main.5eb9f36e.chunk.css",
+    "static/js/main.0c662366.chunk.js"
   ]
 }
