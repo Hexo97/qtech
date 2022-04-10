@@ -16,7 +16,7 @@ jobs:
 
       # Install our packages now that we have node
       - name: Install Node.js dependencies
-        run: npx yarn install # I use npx here so I don't have to install yarn globally on this VM
+        run: npm install # I use npx here so I don't have to install yarn globally on this VM
 
       # Lint the folder system
       - name: Lint Code
