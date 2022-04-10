@@ -32,6 +32,6 @@ jobs:
       - name: Run the tests
         run: npm test
 
-      - name: Run the linting
-        run: npm eslint
+      #- name: Run the linting
+      #  run: npm eslint
         
