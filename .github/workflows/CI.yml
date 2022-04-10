@@ -1,6 +1,26 @@
 name: CI
 on: push
 jobs:
+  run-linters:
+    name: lint Frontend
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository # The first step of most actions is going to 
+        uses: actions/checkout@v2      # use this plugin to clone the repo to the virtual machine
+
+      - name: Set up Node.js # Secondarily because this is a javascript ecosystem we need to install node
+        uses: actions/setup-node@v1 # This plugin takes care of that for us
+        with:
+          node-version: 12 # Some plugins allow for configuration like this
+
+      # Install our packages now that we have node
+      - name: Install Node.js dependencies
+        run: npx yarn install # I use npx here so I don't have to install yarn globally on this VM
+
+      # Lint the folder system
+      - name: Lint Code
+        run: npm eslint
   test:
     runs-on: ubuntu-latest
     steps:
