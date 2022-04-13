@@ -1,0 +1,41 @@
+import React from 'react';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
+const bull = (
+  <Box
+    component="span"
+    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
+  >
+    •
+  </Box>
+);
+
+const card = (title, category, description) => (
+  <React.Fragment>
+    <CardContent>
+      <Typography variant="h5" component="div">
+        {title}
+      </Typography>
+      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        {category}
+      </Typography>
+      <Typography variant="body2">{description}</Typography>
+    </CardContent>
+    <CardActions>
+      <Button size="small">View course</Button>
+    </CardActions>
+  </React.Fragment>
+);
+
+export default function OutlinedCard({ title, category, description }) {
+  return (
+    <Box sx={{ minWidth: 275 }}>
+      <Card variant="outlined">{card(title, category, description)}</Card>
+    </Box>
+  );
+}

@@ -1,21 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import Card from './Components/Card.js';
+import NavBar from './Components/NavBar';
+// import SlideShow from './Components/SlideShow';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-blue-400">
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      <NavBar />
+      {/* <SlideShow/> */}
+
+      {/* <Card
+          title={"Counselling"}
+          category={"Tech"}
+          description={"amazing person"}
+        /> */}
     </div>
   );
 }
