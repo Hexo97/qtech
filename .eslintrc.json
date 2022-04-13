@@ -18,6 +18,5 @@
         "react"
     ],
     "rules": {
-        "eslint linebreak-style": ["error", "windows"]
     }
 }
