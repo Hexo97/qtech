@@ -20,7 +20,7 @@ jobs:
 
       # Lint the folder system
       - name: Lint Code
-        run: npm eslint
+        run: eslint src/**/*.js src/**/*.jsx
   test:
     runs-on: ubuntu-latest
     steps:
