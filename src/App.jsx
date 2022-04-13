@@ -5,7 +5,6 @@ import NavBar from './Components/NavBar';
 // import SlideShow from './Components/SlideShow';
 
 function App() {
-  const m = "sdf"
   return (
     <div className="bg-blue-400">
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
