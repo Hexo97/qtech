@@ -1,6 +1,7 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+// import ListHomePage from './Components/ListHomePage';
 
 const slideImages = [
   'Assets/Images/Services.jpg',
@@ -11,6 +12,8 @@ const slideImages = [
 function Slideshow() {
   return (
     <div>
+      {/* <ListHomePage category={} /> */}
+
       <Slide easing="ease">
         <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[0]})` }}>
