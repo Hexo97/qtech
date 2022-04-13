@@ -2,14 +2,14 @@ import React from 'react';
 import './App.css';
 // import Card from './Components/Card.js';
 import NavBar from './Components/NavBar';
-// import SlideShow from './Components/SlideShow';
+import SlideShow from './Components/SlideShow';
 
 function App() {
   return (
     <div className="bg-blue-400">
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
       <NavBar />
-      {/* <SlideShow/> */}
+      <SlideShow />
 
       {/* <Card
           title={"Counselling"}
