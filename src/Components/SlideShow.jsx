@@ -1,14 +1,14 @@
-import React from "react";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
+import React from 'react';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
 
 const slideImages = [
-  "Assets/Images/Services.jpg",
-  "Assets/Images/Products.jpg",
-  "Assets/Images/Counselling.jpg",
+  'Assets/Images/Services.jpg',
+  'Assets/Images/Products.jpg',
+  'Assets/Images/Counselling.jpg',
 ];
 
-const Slideshow = () => {
+function Slideshow() {
   return (
     <div>
       <Slide easing="ease">
@@ -31,13 +31,13 @@ const Slideshow = () => {
       </Slide>
     </div>
   );
-};
+}
 
-const styles = StyleSheet.create({
-    tinyLogo: {
-        width: 150,
-        height: 150,
-    },
-})
+// const styles = StyleSheet.create({
+//   tinyLogo: {
+//     width: 150,
+//     height: 150,
+//   },
+// });
 
 export default Slideshow;
