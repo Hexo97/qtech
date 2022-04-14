@@ -18,6 +18,6 @@
         "react"
     ],
     "rules": {
-        "eslint linebreak-style": ["error", "windows"]
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
     }
 }

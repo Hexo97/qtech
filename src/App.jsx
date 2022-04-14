@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< Updated upstream
 import './App.css';
 // import Card from './Components/Card.js';
 import NavBar from './Components/NavBar';
@@ -27,8 +28,27 @@ function App() {
           category={"Tech"}
           description={"amazing person"}
         /> */}
+=======
+import { Outlet, Link } from 'react-router-dom';
+import 'bootswatch/dist/quartz/bootstrap.min.css';
+
+export default function App() {
+  return (
+    <div>
+      <h1>Hello</h1>
+      <nav
+        style={{
+          borderBottom: 'solid 1px',
+          paddingBottom: '1rem',
+        }}
+      >
+        <Link to="/contact">Contact Us</Link>
+        |
+        {' '}
+        <Link to="/about">About Us</Link>
+      </nav>
+      <Outlet />
+>>>>>>> Stashed changes
     </div>
   );
 }
-
-export default App;
