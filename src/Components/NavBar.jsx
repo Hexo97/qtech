@@ -56,8 +56,8 @@ function Header() {
         </p>
         <p className="link">Products</p>
         <p className="link">Services</p>
-        <p className="link">About Us</p>
-        <p className="link">Contact Us</p>
+        <p className="link"><Link to="about">About Us</Link></p>
+        <p className="link"><Link to="contact">Contact Us</Link></p>
       </div>
     </header>
   );
