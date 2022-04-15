@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // import { useSelector } from "react-redux";
 // import { selectItems } from "../slices/basketSlice";
@@ -8,20 +10,17 @@ function Header() {
   //   const basket = useSelector(selectItems);
 
   return (
-    <header>
+    <header className='bg-blue-400'>
       {/* Left side (logo) */}
       <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
         <div
           //   onClick={() => router.push("/")}
-          className="mt-2 flex items-center flex-grow sm:flex-grow-0"
+          className="mt-5 flex items-center flex-grow sm:flex-grow-0 px-2"
         >
-          {/* <Image
-            src="https://links.papareact.com/f90"
-            width={150}
-            height={40}
-            objectFit="contain"
-            className="cursor-pointer"
-          /> */}
+          <img className="object-contain cursor-pointer h-10"
+            src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+           
+          />
         </div>
 
         {/* Search bar */}
@@ -50,21 +49,17 @@ function Header() {
       </div>
 
       {/* Bottom Nav */}
-      <div className="flex items-center bg-amazon_blue-light text-white text-sm p-2 pl-6 space-x-3">
-        <p className="flex items-center ">
+      <div className="flex bg-amazon_blue-light text-white text-sm p-2 pl-6 space-x-3 justify-center">
+        <p className="flex">
           {/* <MenuIcon className="h-6 mr-1" /> */}
         </p>
-        <p className="link"> All</p>
-        <p className="link">Grocery</p>
-        <p className="link">Gift Cards & Top-up</p>
-        <p className="link">Buy Again</p>
-        <p className="link">Free Delivery</p>
-        <p className="link hidden md:inline">Electronics</p>
-        <p className="link hidden lg:inline">Health & Personal Care</p>
-        <p className="link hidden lg:inline">Toy Games</p>
-        <p className="link hidden xl:inline">Shopper Toolkit</p>
-        <p className="link hidden xl:inline">vouchers</p>
-        <p className="link hidden xl:inline">Gift ideas</p>
+        <p className="link"><Link to="/">Home</Link></p>
+        <p className="link">Products</p>
+        <p className="link">Services</p>
+        <p className="link">About Us</p>
+        <p className="link">Contact Us</p>
+        
+        <p className="link hidden lg:inline"><Link to="/toys">Toy Games</Link></p>
       </div>
     </header>
   );

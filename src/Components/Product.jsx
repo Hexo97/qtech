@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import { Link } from "react-router-dom";
 
 function Product({ ...product }) {
 
@@ -14,7 +15,10 @@ function Product({ ...product }) {
                 
             </div>
             <img src={product.image} alt="" />
-            <button>Click to view details</button>
+            <button>
+            <Link to="ProductDetails">Click to view details </Link>
+
+            </button>
         </div>
     )
 }
