@@ -41,7 +41,7 @@ function Contact() {
               Contact Customer Support
             </h3>
             <p className="text-center break-normal text-sm md:text-lg pb-7">
-              Sometimes you need a little help from your friends. Or a HubSpot
+              Sometimes you need a little help from your friends. Or a QTECH
               support rep. Don’t worry… we’re here for you.
             </p>
             <p className=" p-4 bg-red-400 text-white font-bold">
