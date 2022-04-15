@@ -12,35 +12,25 @@ const slideImages = [
 function Slideshow() {
   return (
     <div>
-      {/* <ListHomePage category={} /> */}
-
       <Slide easing="ease">
         <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[0]})` }}>
-            <span>Slide 1</span>
+            <span>#1 cources resource from middle east</span>
           </div>
         </div>
         <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[1]})` }}>
-            <span>Slide 2</span>
+            <span>best information technology courses</span>
           </div>
         </div>
-        {/* <div className="each-slide"> */}
         <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[2]})` }}>
-            <span>Slide 3</span>
+            <span>where eLearning happens</span>
           </div>
         </div>
       </Slide>
     </div>
   );
 }
-
-// const styles = StyleSheet.create({
-//   tinyLogo: {
-//     width: 150,
-//     height: 150,
-//   },
-// });
 
 export default Slideshow;
