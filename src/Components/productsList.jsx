@@ -1,4 +1,4 @@
-export const products = [
+export const mainProducts = [
     {
         id: 1,
         title: "Oculus Quest All-in-one VR Gaming Headset – 64GB",
@@ -15,7 +15,7 @@ export const products = [
         image: "https://images-na.ssl-images-amazon.com/images/I/41DQoLIfsRL._AC_US327_FMwebp_QL65_.jpg",
         price: 15.96,
         category: 'Service',
-        rating: 3,
+        rating: 4,
         instructor: 'Omar',
         description: 'here descrscsdsxcs',
     },
@@ -35,7 +35,7 @@ export const products = [
         image: "https://images-na.ssl-images-amazon.com/images/I/51T-sMqSMiL._SX329_BO1,204,203,200_.jpg",
         price: 9.96,
         category: 'Services',
-        rating: 3,
+        rating: 5,
         instructor: 'Omar',
         description: 'here descrscsdsxcs',
     },
@@ -45,7 +45,7 @@ export const products = [
         image: "https://images-na.ssl-images-amazon.com/images/G/01/amazonglobal/images/email/asins/DURM-2B638E86650FFF18._V531815327_.jpg",
         price: 19.96,
         category: 'Counselling',
-        rating: 3,
+        rating: 4,
         instructor: 'Omar',
         description: 'here descrscsdsxcs',
     }

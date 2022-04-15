@@ -2,15 +2,17 @@ import React from "react";
 import "./App.css";
 // import Card from './Components/Card.js';
 import SlideShow from "./Components/SlideShow";
-// import Product from "./Components/Product";
-import Product from "./Components/Product";
+import ListHomePage from "./Components/ListHomePage";
 
 function App() {
+
   return (
-    <div className="bg-blue-400">
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+    <div className="bg-blue-200">
       <SlideShow />
-      <Product />
+      <h1 className="sec-heading">Top Rated Courses</h1>
+      <div style={{ padding: 40 }}>
+        <ListHomePage />
+      </div>
     </div>
   );
 }

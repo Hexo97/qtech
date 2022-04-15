@@ -1,35 +1,39 @@
-import React from 'react';
-import '../App.css';
+import React, { useEffect, useState } from 'react';
+import { mainProducts } from './productsList';
 import Product from './Product';
-import { products } from './productsList';
+import { useLocation } from 'react-router-dom'
+import '../App.css';
 
 function ListHomePage() {
+    const path = useLocation().pathname
+    const [products, setProducts] = useState(mainProducts)
 
-    console.log('hi')
+    useEffect(() => {
+        path != '/products' && setProducts(products.filter(product => product.rating >= 4))
+    }, []);
+
     return (
         <div className="home">
-            {/* <img className="home__image" src={bannerImg} alt="" /> */}
-
-            {/*product id, title, price, rating */}
-
-            <div className="home__row">
-                {products.map(item => {
-                    return (
-                        <Product
-                            id={item.id}
-                            key={item.id}
-                            title={item.title}
-                            image={item.image}
-                            price={item.price}
-                            rating={item.rating}
-                        />
-                    )
-                })}
-
-            </div>
-
+            {
+                <div className="home__row">
+                    {
+                        products.map(item => {
+                            return (
+                                < Product
+                                    id={item.id}
+                                    key={item.id}
+                                    title={item.title}
+                                    image={item.image}
+                                    price={item.price}
+                                    rating={item.rating}
+                                />
+                            )
+                        }
+                        )
+                    }
+                </div>
+            }
         </div>
-
     )
 }
 
