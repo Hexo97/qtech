@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -10,16 +10,16 @@ function Header() {
   //   const basket = useSelector(selectItems);
 
   return (
-    <header className='bg-blue-400'>
+    <header className="bg-blue-400">
       {/* Left side (logo) */}
       <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
         <div
           //   onClick={() => router.push("/")}
           className="mt-5 flex items-center flex-grow sm:flex-grow-0 px-2"
         >
-          <img className="object-contain cursor-pointer h-10"
+          <img
+            className="object-contain cursor-pointer h-10"
             src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-           
           />
         </div>
 
@@ -50,16 +50,14 @@ function Header() {
 
       {/* Bottom Nav */}
       <div className="flex bg-amazon_blue-light text-white text-sm p-2 pl-6 space-x-3 justify-center">
-        <p className="flex">
-          {/* <MenuIcon className="h-6 mr-1" /> */}
+        <p className="flex">{/* <MenuIcon className="h-6 mr-1" /> */}</p>
+        <p className="link">
+          <Link to="/">Home</Link>
         </p>
-        <p className="link"><Link to="/">Home</Link></p>
         <p className="link">Products</p>
         <p className="link">Services</p>
         <p className="link">About Us</p>
         <p className="link">Contact Us</p>
-        
-        <p className="link hidden lg:inline"><Link to="/toys">Toy Games</Link></p>
       </div>
     </header>
   );

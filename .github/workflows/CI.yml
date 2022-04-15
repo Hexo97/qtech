@@ -1,8 +1,5 @@
-name: main
-on:
-  push:
-    branches: [ master ]
-    
+name: CI
+on: push
 jobs:
   run-linters:
     name: lint Frontend
@@ -55,23 +52,16 @@ jobs:
       - name: Run the tests
         run: npm test
 
-   build:
+  deploy:
     runs-on: ubuntu-latest
+    needs: [build, run-linters]
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "qtech2022" #Must be unique in Heroku
-          heroku_email: "yabani4ever"gmail.com"
+          heroku_email: "yabani4ever@gmail.com"
 
-    deploy:
-    runs-on: ubuntu-latest
-    needs: [build]
-    steps:
-      - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.12.12 
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "qtech2022" #Must be unique in Heroku
-          heroku_email: "yabani4ever"gmail.com"
+      #- name: Run the linting
+      #  run: npm eslint
