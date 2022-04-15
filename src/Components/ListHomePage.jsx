@@ -21,7 +21,6 @@ function ListHomePage() {
                             price={item.price}
                             rating={item.rating}
                         />
-
                     )
                 })}
 
