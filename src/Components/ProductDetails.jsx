@@ -13,7 +13,45 @@ function ProductDetails() {
   const modules = [
     {
       id: 1,
-      name: "intro",
+      title: "Introduction",
+      lectures: 3,
+      duration: 2,
+    },
+    {
+      id: 2,
+      title: "JavaScript Fundmentals",
+      lectures: 5,
+      duration: 8,
+    },
+    {
+      id: 3,
+      title: "Logic Operators",
+      lectures: 4,
+      duration: 3,
+    },
+    {
+      id: 4,
+      title: "Functions",
+      lectures: 4,
+      duration: 2,
+    },
+    {
+      id: 5,
+      title: "Data Structures",
+      lectures: 5,
+      duration: 6,
+    },
+    {
+      id: 6,
+      title: "Work With Arrays",
+      lectures: 3,
+      duration: 5,
+    },
+    {
+      id: 7,
+      title: "Object Oriented Programming",
+      lectures: 4,
+      duration: 7,
     },
   ];
 
