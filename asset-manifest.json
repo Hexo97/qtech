@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/qtech/static/css/main.e66b6b66.css",
-    "main.js": "/qtech/static/js/main.e22562dc.js",
-    "index.html": "/qtech/index.html",
-    "main.e66b6b66.css.map": "/qtech/static/css/main.e66b6b66.css.map",
-    "main.e22562dc.js.map": "/qtech/static/js/main.e22562dc.js.map"
+    "main.css": "/static/css/main.e80276c7.css",
+    "main.js": "/static/js/main.cd2f9993.js",
+    "index.html": "/index.html",
+    "main.e80276c7.css.map": "/static/css/main.e80276c7.css.map",
+    "main.cd2f9993.js.map": "/static/js/main.cd2f9993.js.map"
   },
   "entrypoints": [
-    "static/css/main.e66b6b66.css",
-    "static/js/main.e22562dc.js"
+    "static/css/main.e80276c7.css",
+    "static/js/main.cd2f9993.js"
   ]
 }
