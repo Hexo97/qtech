@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import data from './data';
+import { employees } from '../Components/employees';
+import Table from 'react-bootstrap/Table'
 
 function About() {
   const [info, setInfo] = useState(null);
@@ -47,6 +49,32 @@ function About() {
                     </li>
                   </ul>
                   <br />
+                  Our Team :
+                  {' '}
+                  <br />
+                  <br />
+                  <Table striped bordered hover variant="dark">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Description</th>
+                      <th>Image</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  {
+                    employees.map(employee =>
+                      <tr key={employee.id}>
+                        <td>{employee.name}</td>
+                        <td>{employee.position}</td>
+                        <td>{employee.description}</td>
+                        <td><img width="225px" height="150px" src={employee.image} /></td>
+                      </tr>
+                      )
+                  }
+                  </tbody>
+                  </Table>
                 </p>
               </div>
             )
