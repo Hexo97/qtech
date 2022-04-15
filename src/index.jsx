@@ -7,13 +7,14 @@ import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProductDetails from "./Components/ProductDetails";
-// import Products from './Components/Products';
+import ListHomePage from './Components/ListHomePage';
 
 ReactDOM.render(
   <BrowserRouter>
     <NavBar />
     <Routes>
       <Route path="/" element={<App />} />
+      <Route path="products" element={<ListHomePage />} />
       <Route path="ProductDetails" element={<ProductDetails />} />
       <Route path="contact" element={<Contact />} />
       <Route path="about" element={<About />} />
