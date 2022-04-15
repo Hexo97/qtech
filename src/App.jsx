@@ -1,33 +1,19 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 // import Card from './Components/Card.js';
-// import NavBar from './Components/NavBar';
-// import Products from './Pages/Products';
-import { Outlet, Link } from 'react-router-dom';
-import 'bootswatch/dist/quartz/bootstrap.min.css';
-// import SlideShow from './Components/SlideShow';
-// import SlideShow from './Components/SlideShow';
+import SlideShow from "./Components/SlideShow";
+import Product from "./Components/Product";
+import Contact from "./Pages/Contact";
+import About from "./Pages/About";
 
-
-export default function App() {
+function App() {
   return (
-    <div>
-      <h1>Hello</h1>
-      <nav
-        style={{
-          borderBottom: 'solid 1px',
-          paddingBottom: '1rem',
-        }}
-      >
-        <Link to="/products">Products</Link>
-        |
-        {' '}
-        <Link to="/contact">Contact Us</Link>
-        |
-        {' '}
-        <Link to="/about">About Us</Link>
-      </nav>
-      <Outlet />
+    <div className="bg-blue-400">
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      <SlideShow />
+      <Product />
+      <About/>
+      <Contact/>
     </div>
   );
 }
