@@ -54,10 +54,18 @@ function Header() {
         <p className="link">
           <Link to="/">Home</Link>
         </p>
-        <p className="link">Products</p>
-        <p className="link">Services</p>
-        <p className="link"><Link to="/about">About Us</Link></p>
-        <p className="link"><Link to="/contact">Contact Us</Link></p>
+        <p className="link">
+          <Link to="/products">Products</Link>
+        </p>
+        <p className="link">
+          Services
+        </p>
+        <p className="link">
+          <Link to="/about">About Us</Link>
+        </p>
+        <p className="link">
+          <Link to="/contact">Contact Us</Link>
+        </p>
       </div>
     </header>
   );
