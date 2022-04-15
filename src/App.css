@@ -47,10 +47,9 @@
 }
 
 .each-slide span {
-  padding: 1000px;
-  font-size: 80px;
+  padding: 100px;
+  font-size: 30px;
   text-align: center;
-  background: #ffffff5d;
 }
 
 .home {
