@@ -4,8 +4,6 @@ import "./App.css";
 import SlideShow from "./Components/SlideShow";
 // import Product from "./Components/Product";
 import Product from "./Components/Product";
-import Contact from "./Pages/Contact";
-import About from "./Pages/About";
 
 function App() {
   return (
@@ -13,8 +11,6 @@ function App() {
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
       <SlideShow />
       <Product />
-      <About />
-      <Contact />
     </div>
   );
 }
