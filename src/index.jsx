@@ -13,7 +13,7 @@ ReactDOM.render(
   <BrowserRouter>
     <NavBar />
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route path="/qtech" element={<App />} />
       <Route path="ProductDetails" element={<ProductDetails />} />
       <Route path="contact" element={<Contact />} />
       <Route path="about" element={<About />} />
