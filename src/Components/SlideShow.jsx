@@ -1,12 +1,12 @@
-import React from 'react';
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css';
+import React from "react";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 // import ListHomePage from './Components/ListHomePage';
 
 const slideImages = [
-  'Assets/Images/Services.jpg',
-  'Assets/Images/Products.jpg',
-  'Assets/Images/Counselling.jpg',
+  "Assets/Images/Services.jpg",
+  "Assets/Images/Products.jpg",
+  "Assets/Images/Counselling.jpg",
 ];
 
 function Slideshow() {

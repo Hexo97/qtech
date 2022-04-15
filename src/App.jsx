@@ -12,8 +12,10 @@ function App() {
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
       <SlideShow />
       <Product />
-      <About/>
-      <Contact/>
+      <About />
+      <Contact />
     </div>
   );
 }
+
+export default App;
