@@ -4,6 +4,8 @@ import Product from './Product';
 import { products } from './productsList';
 
 function ListHomePage() {
+
+    console.log('hi')
     return (
         <div className="home">
             {/* <img className="home__image" src={bannerImg} alt="" /> */}
