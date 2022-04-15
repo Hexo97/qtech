@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import data from './data';
+import ContactForm from '../Components/ContactForm';
 
 function Contact() {
   const [info, setInfo] = useState(null);
@@ -7,6 +8,17 @@ function Contact() {
   useEffect(() => {
     setInfo(data.info);
   }, []);
+
+  useEffect(() => {
+    if (document) {
+      const stylesheet = document.createElement("link");
+      stylesheet.rel = "stylesheet";
+      stylesheet.href = "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css";
+
+      document.head.appendChild(stylesheet);
+    }
+  }, []);
+
 
   return (
     <>
@@ -30,7 +42,10 @@ function Contact() {
                 {' '}
                 {info.address}
                 <br />
+                <br />
+                <br />
               </p>
+                <ContactForm />
             </div>
             )
         }

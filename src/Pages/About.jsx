@@ -13,16 +13,16 @@ function About() {
   return (
     <>
       <h1>About Us</h1>
-      <h3>Qtech Qatar</h3>
+      <br />
       {
             info !== null && socials !== null
             && (
               <div>
                 <p>Our Mission:</p>
+                <br />
                 <p>
                   {' '}
                   {info.short_description}
-                  <br />
                   <br />
                   {' '}
                   {info.description}
