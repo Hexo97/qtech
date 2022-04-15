@@ -112,6 +112,12 @@
   color: #f0c14b;
 }
 
+.sec-heading {
+  color: #000000;
+  font-size: 90px;
+  text-align: center;
+}
+
 .product>button {
   background-color: #f0c14b;
   border: 1px solid;
