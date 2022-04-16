@@ -13,13 +13,8 @@ function About() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-cyan-200 to-blue-200 ">
+    <div className="bg-gradient-to-b from-cyan-200 to-blue-200 aboutUsBG ">
       <div className="max-w-5xl mx-auto">
-        <img
-          className=" h-[27rem] w-full object-cover"
-          src="https://media.istockphoto.com/photos/about-us-picture-id1163589059?k=20&m=1163589059&s=612x612&w=0&h=h2JhLYR5652zSLt64wGOfJhDxlMLToQPn4Kd5JT1bJo="
-          alt=""
-        />
       </div>
       <div className="max-w-3xl mx-auto py-20 lg:text-lg">
         <br />
@@ -33,10 +28,10 @@ function About() {
             <ul className="list-unstyled">
               <li>
                 <a
-                  className="text-white btn btn-info btn-sm"
+                  className="btn btn-info btn-sm "
                   href={socials.facebook}
                 >
-                  <i className={`fa fa-${socials.facebook} text-white`}>
+                  <i className={`fa fa-${socials.facebook} `}>
                     Facebook
                   </i>
                 </a>

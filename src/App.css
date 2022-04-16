@@ -140,12 +140,12 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: #8e8f94;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #a90000;
+  background: #00eaff;
 }
 
 /* Position and sizing of clickable cross button */
@@ -209,4 +209,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .bm-item:hover {
   color: #ffffff;
+}
+
+.aboutUsBG{
+  /* background-image: ; */
+  background: linear-gradient(rgba(0, 136, 255, 0.5), rgb(255, 255, 255)),
+  url("https://media.istockphoto.com/photos/about-us-picture-id1163589059?k=20&m=1163589059&s=612x612&w=0&h=h2JhLYR5652zSLt64wGOfJhDxlMLToQPn4Kd5JT1bJo=");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
