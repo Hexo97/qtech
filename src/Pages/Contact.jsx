@@ -27,8 +27,8 @@ function Contact() {
             <PhoneIcon className="h-12 w-12" />
             <h3 className="font-semibold md:text-lg ">Talk to Sales</h3>
             <p className="text-center break-normal text-sm md:text-lg">
-              Interested in HubSpot’s software? Just pick up the phone to chat
-              with a member of our sales team.
+              Interested in QTECH’s coures? Just pick up the phone to chat with
+              a member of our sales team.
             </p>
             <p className="md:text-lg font-bold text-cyan-500 pt-10">
               +974 3348 6007
