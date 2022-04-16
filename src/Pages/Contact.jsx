@@ -1,15 +1,9 @@
 import React from "react";
-// import data from "./data";
 import { PhoneIcon } from "@heroicons/react/solid";
 import { ChatAlt2Icon } from "@heroicons/react/solid";
-// import { LocationMarkerIcon } from "@heroicons/react/solid";
+import { Link } from "react-router-dom";
 
 function Contact() {
-  // const [info, setInfo] = useState(null);
-
-  // useEffect(() => {
-  //   setInfo(data.info);
-  // }, []);
 
   return (
     <div className="bg-gradient-to-b from-sky-300 to-indigo-400 h-screen">
@@ -45,46 +39,19 @@ function Contact() {
               support rep. Don’t worry… we’re here for you.
             </p>
             <p className=" p-4 bg-red-400 text-white font-bold">
-              Contact Support
+              <Link
+                to='help@qtech.com'
+                onClick={(e) => {
+                  window.location.href = "mailto:help@qtech.com";
+                  e.preventDefault();
+                }}
+              >
+                Contact Support
+              </Link>
             </p>
           </div>
         </div>
-        {/* <div className="text-center mt-10">
-          <div>
-            <div className="bg-white py-12 flex flex-col space-y-4 items-center max-w-md mx-auto">
-              <LocationMarkerIcon className="h-12 w-12" />
-              <h3 className="font-semibold md:text-lg">
-                Please contact us if you face any issues
-              </h3>
-              <p className="text-center break-normal text-sm md:text-lg pb-7">
-                Email : qtech@gmail.com
-              </p>
-              <p className=" p-4">
-                Address : Breaking bad street, Apex, Qatar, P.o. box 00000
-              </p>
-              <p className=" p-4">
-                Phone No : Breaking bad street, Apex, Qatar, P.o. box 00000
-              </p>
-            </div>
-          </div>
-        </div> */}
       </div>
-
-      {/* <h1>Contact Us</h1>
-      <h3>Qtech Qatar</h3>
-      {info !== null && (
-        <div>
-          <p>Please contact us if you face any issues.</p>
-          <p>
-            Email : {info.email}
-            <br />
-            Phone No : {info.phone_no}
-            <br />
-            Address : {info.address}
-            <br />
-          </p>
-        </div>
-      )} */}
     </div>
   );
 }
