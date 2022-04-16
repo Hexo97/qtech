@@ -8,6 +8,51 @@ export const mainProducts = [
         rating: 3,
         instructor: 'Omar',
         description: 'here descrscsdsxcs',
+        duration: 2,
+        content: [
+            {
+                id: 1,
+                title: "Introduction",
+                lectures: 3,
+                duration: 2,
+            },
+            {
+                id: 2,
+                title: "JavaScript Fundmentals",
+                lectures: 5,
+                duration: 8,
+            },
+            {
+                id: 3,
+                title: "Logic Operators",
+                lectures: 4,
+                duration: 3,
+            },
+            {
+                id: 4,
+                title: "Functions",
+                lectures: 4,
+                duration: 2,
+            },
+            {
+                id: 5,
+                title: "Data Structures",
+                lectures: 5,
+                duration: 6,
+            },
+            {
+                id: 6,
+                title: "Work With Arrays",
+                lectures: 3,
+                duration: 5,
+            },
+            {
+                id: 7,
+                title: "Object Oriented Programming",
+                lectures: 4,
+                duration: 7,
+            },
+        ]
     },
     {
         id: 2,
@@ -18,6 +63,51 @@ export const mainProducts = [
         rating: 4,
         instructor: 'Omar',
         description: 'here descrscsdsxcs',
+        duration: 2,
+        content: [
+            {
+                id: 1,
+                title: "Introduction",
+                lectures: 2,
+                duration: 2,
+            },
+            {
+                id: 2,
+                title: "JavaScript Fundmental",
+                lectures: 5,
+                duration: 8,
+            },
+            {
+                id: 3,
+                title: "Logic Operators",
+                lectures: 4,
+                duration: 3,
+            },
+            {
+                id: 4,
+                title: "Functions",
+                lectures: 4,
+                duration: 2,
+            },
+            {
+                id: 5,
+                title: "Data Structures",
+                lectures: 5,
+                duration: 6,
+            },
+            {
+                id: 6,
+                title: "Work With Arrays",
+                lectures: 3,
+                duration: 5,
+            },
+            {
+                id: 7,
+                title: "Object Oriented Programming",
+                lectures: 4,
+                duration: 7,
+            },
+        ]
     },
     {
         id: 3,
@@ -27,7 +117,51 @@ export const mainProducts = [
         category: 'Products',
         rating: 3,
         instructor: 'Omar',
-        description: 'here descrscsdsxcs',
+        description: 'here descrscsdsxcs', duration: 2,
+        content: [
+            {
+                id: 1,
+                title: "Introduction",
+                lectures: 3,
+                duration: 2,
+            },
+            {
+                id: 2,
+                title: "JavaScript Fundmentals",
+                lectures: 5,
+                duration: 8,
+            },
+            {
+                id: 3,
+                title: "Logic Operators",
+                lectures: 4,
+                duration: 3,
+            },
+            {
+                id: 4,
+                title: "Functions",
+                lectures: 4,
+                duration: 2,
+            },
+            {
+                id: 5,
+                title: "Data Structures",
+                lectures: 5,
+                duration: 6,
+            },
+            {
+                id: 6,
+                title: "Work With Arrays",
+                lectures: 3,
+                duration: 5,
+            },
+            {
+                id: 7,
+                title: "Object Oriented Programming",
+                lectures: 4,
+                duration: 7,
+            },
+        ]
     },
     {
         id: 4,
@@ -37,7 +171,51 @@ export const mainProducts = [
         category: 'Services',
         rating: 5,
         instructor: 'Omar',
-        description: 'here descrscsdsxcs',
+        description: 'here descrscsdsxcs', duration: 2,
+        content: [
+            {
+                id: 1,
+                title: "Introduction",
+                lectures: 3,
+                duration: 2,
+            },
+            {
+                id: 2,
+                title: "JavaScript Fundmentals",
+                lectures: 5,
+                duration: 8,
+            },
+            {
+                id: 3,
+                title: "Logic Operators",
+                lectures: 4,
+                duration: 3,
+            },
+            {
+                id: 4,
+                title: "Functions",
+                lectures: 4,
+                duration: 2,
+            },
+            {
+                id: 5,
+                title: "Data Structures",
+                lectures: 5,
+                duration: 6,
+            },
+            {
+                id: 6,
+                title: "Work With Arrays",
+                lectures: 3,
+                duration: 5,
+            },
+            {
+                id: 7,
+                title: "Object Oriented Programming",
+                lectures: 4,
+                duration: 7,
+            },
+        ]
     },
     {
         id: 5,
@@ -47,7 +225,51 @@ export const mainProducts = [
         category: 'Counselling',
         rating: 4,
         instructor: 'Omar',
-        description: 'here descrscsdsxcs',
+        description: 'here descrscsdsxcs', duration: 2,
+        content: [
+            {
+                id: 1,
+                title: "Introduction",
+                lectures: 3,
+                duration: 2,
+            },
+            {
+                id: 2,
+                title: "JavaScript Fundmentals",
+                lectures: 5,
+                duration: 8,
+            },
+            {
+                id: 3,
+                title: "Logic Operators",
+                lectures: 4,
+                duration: 3,
+            },
+            {
+                id: 4,
+                title: "Functions",
+                lectures: 4,
+                duration: 2,
+            },
+            {
+                id: 5,
+                title: "Data Structures",
+                lectures: 5,
+                duration: 6,
+            },
+            {
+                id: 6,
+                title: "Work With Arrays",
+                lectures: 3,
+                duration: 5,
+            },
+            {
+                id: 7,
+                title: "Object Oriented Programming",
+                lectures: 4,
+                duration: 7,
+            },
+        ]
     }
 ]
 

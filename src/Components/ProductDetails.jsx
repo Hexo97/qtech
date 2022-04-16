@@ -8,52 +8,45 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import ProductDetailsModules from "./ProductDetailsModules";
+import { useParams } from 'react-router-dom'
+import { mainProducts } from '../Components/productsList';
 
 function ProductDetails() {
-  const modules = [
-    {
-      id: 1,
-      title: "Introduction",
-      lectures: 3,
-      duration: 2,
-    },
-    {
-      id: 2,
-      title: "JavaScript Fundmentals",
-      lectures: 5,
-      duration: 8,
-    },
-    {
-      id: 3,
-      title: "Logic Operators",
-      lectures: 4,
-      duration: 3,
-    },
-    {
-      id: 4,
-      title: "Functions",
-      lectures: 4,
-      duration: 2,
-    },
-    {
-      id: 5,
-      title: "Data Structures",
-      lectures: 5,
-      duration: 6,
-    },
-    {
-      id: 6,
-      title: "Work With Arrays",
-      lectures: 3,
-      duration: 5,
-    },
-    {
-      id: 7,
-      title: "Object Oriented Programming",
-      lectures: 4,
-      duration: 7,
-    },
-  ];
+
+  const product = mainProducts.find(prod => prod.id == useParams().prodId)
+
+  function reviewStars(num) {
+    let stars = [];
+    for (let i = 0; i < num; i++) {
+      stars.push(<StarIcon />)
+    }
+    for (let i = 5; i >= stars.length; i--) {
+      if (stars.length != 5) {
+        stars.push(<StarBorderIcon />)
+      }
+    }
+    return stars
+  }
+  const starRating = reviewStars(product.rating)
+
+
+  function countLectures(content) {
+    let lectureCount = 0;
+    for (let i = 0; i < content.length; i++) {
+      lectureCount += content[i].lectures
+    }
+    return lectureCount
+  }
+  const lectures = countLectures(product.content)
+
+  function countHours(content) {
+    let hoursCount = 0;
+    for (let i = 0; i < content.length; i++) {
+      hoursCount += content[i].duration
+    }
+    return hoursCount
+  }
+  const hours = countHours(product.content)
 
   return (
     <div
@@ -66,7 +59,7 @@ function ProductDetails() {
       {/* Gray Opacity BG DIV */}
       <div className="z-10 bg-gray-700 h-full bg-opacity-80">
         {/* Top language live class div */}
-        <div className="flex justify-between p-16 text-gray-300">
+        <div className="flex justify-between p-20 text-gray-300">
           <div className="flex space-x-2">
             <LanguageIcon />
             <p className="font-semibold">English</p>
@@ -77,21 +70,16 @@ function ProductDetails() {
           </div>
         </div>
         <div className="h-4 m-auto text-center text-cyan-400">
-          <StarIcon />
-          <StarIcon />
-          <StarIcon />
-          <StarBorderIcon />
-          <StarBorderIcon />
+          {starRating}
         </div>
 
         <div className="mx-auto text-center m-20 max-w-screen-md">
           <h2 className="text-5xl p-2 font-bold break-normal text-white">
-            Modern JavaScript From The Begginning
+            {product.title}
           </h2>
 
           <h3 className="text-lg font-semibold mt-14 text-gray-100">
-            Learn and build projects with pure JavaScript <br />
-            (No frameworks or librraries)
+            {product.description}
           </h3>
 
           <div className="mt-10">
@@ -101,12 +89,12 @@ function ProductDetails() {
               alt=""
             />
             <p className="mt-3 text-sm font-semibold text-white">
-              By - Eric Nduku
+              By - {product.instructor}
             </p>
           </div>
 
           <div className="mt-3">
-            <p className="font-bold text-3xl text-green-600">$199</p>
+            <p className="font-bold text-3xl text-green-600">${product.price}</p>
           </div>
         </div>
 
@@ -119,27 +107,27 @@ function ProductDetails() {
             <div className="flex items-center space-x-5 text-white">
               <div className="flex space-x-1 items-center  lg:text-xl">
                 <CalendarMonthIcon />
-                <p className="font-semibold">2 Months course</p>
+                <p className="font-semibold">{product.duration} Months course</p>
               </div>
 
               <div className="flex space-x-1 items-center lg:text-xl">
                 <OndemandVideoIcon />
-                <p className="font-semibold">28 Lectures</p>
+                <p className="font-semibold">{lectures} Lectures</p>
               </div>
 
               <div className="flex space-x-1 items-center  lg:text-xl">
                 <AccessTimeIcon />
-                <p className="font-semibold">34 Hrs Duration</p>
+                <p className="font-semibold">{hours} Hrs Duration</p>
               </div>
             </div>
-            <div className="font-bold p-4 rounded-md bg-red-300 text-white cursor-pointer">
+            <a className="font-bold p-4 rounded-md bg-red-300 text-white cursor-pointer" href="/contact">
               Buy Course
-            </div>
+            </a>
           </div>
         </div>
       </div>
-      <div className="bg-white ">
-        <ProductDetailsModules modules={modules} />
+      <div>
+        <ProductDetailsModules modules={product.content} />
       </div>
     </div>
   );
