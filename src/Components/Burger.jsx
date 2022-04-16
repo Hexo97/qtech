@@ -3,7 +3,9 @@ import { slide as Menu } from 'react-burger-menu';
 
 export default function Burger() {
     return (
-        <Menu>
+        <Menu styles={{
+            background: '#373a47'
+}}>
             <a className="menu-item" href="/">
                 Home
             </a>
