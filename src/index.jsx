@@ -14,6 +14,7 @@ ReactDOM.render(
     <Burger/>
     <Routes>
       <Route path="/" element={<App />} />
+      <Route path="/qtech" element={<App />} />
       <Route path="products" element={<ListHomePage />} />
       <Route path="ProductDetails/:prodId" element={<ProductDetails />} />
       <Route path="contact" element={<Contact />} />
