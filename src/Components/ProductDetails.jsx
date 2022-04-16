@@ -8,45 +8,44 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import ProductDetailsModules from "./ProductDetailsModules";
-import { useParams } from 'react-router-dom'
-import { mainProducts } from '../Components/productsList';
+import { useParams } from "react-router-dom";
+import { mainProducts } from "../Components/productsList";
 
 function ProductDetails() {
-
-  const product = mainProducts.find(prod => prod.id == useParams().prodId)
+  const product = mainProducts.find((prod) => prod.id == useParams().prodId);
 
   function reviewStars(num) {
     let stars = [];
     for (let i = 0; i < num; i++) {
-      stars.push(<StarIcon />)
+      stars.push(<StarIcon />);
     }
     for (let i = 5; i >= stars.length; i--) {
       if (stars.length != 5) {
-        stars.push(<StarBorderIcon />)
+        stars.push(<StarBorderIcon />);
       }
     }
-    return stars
+    return stars;
   }
-  const starRating = reviewStars(product.rating)
 
+  const starRating = reviewStars(product.rating);
 
   function countLectures(content) {
     let lectureCount = 0;
     for (let i = 0; i < content.length; i++) {
-      lectureCount += content[i].lectures
+      lectureCount += content[i].lectures;
     }
-    return lectureCount
+    return lectureCount;
   }
-  const lectures = countLectures(product.content)
+  const lectures = countLectures(product.content);
 
   function countHours(content) {
     let hoursCount = 0;
     for (let i = 0; i < content.length; i++) {
-      hoursCount += content[i].duration
+      hoursCount += content[i].duration;
     }
-    return hoursCount
+    return hoursCount;
   }
-  const hours = countHours(product.content)
+  const hours = countHours(product.content);
 
   return (
     <div
@@ -69,9 +68,7 @@ function ProductDetails() {
             <LaptopIcon />
           </div>
         </div>
-        <div className="h-4 m-auto text-center text-cyan-400">
-          {starRating}
-        </div>
+        <div className="h-4 m-auto text-center text-cyan-400">{starRating}</div>
 
         <div className="mx-auto text-center m-20 max-w-screen-md">
           <h2 className="text-5xl p-2 font-bold break-normal text-white">
@@ -94,7 +91,9 @@ function ProductDetails() {
           </div>
 
           <div className="mt-3">
-            <p className="font-bold text-3xl text-green-600">${product.price}</p>
+            <p className="font-bold text-3xl text-green-600">
+              ${product.price}
+            </p>
           </div>
         </div>
 
@@ -107,7 +106,9 @@ function ProductDetails() {
             <div className="flex items-center space-x-5 text-white">
               <div className="flex space-x-1 items-center  lg:text-xl">
                 <CalendarMonthIcon />
-                <p className="font-semibold">{product.duration} Months course</p>
+                <p className="font-semibold">
+                  {product.duration} Months course
+                </p>
               </div>
 
               <div className="flex space-x-1 items-center lg:text-xl">
@@ -120,7 +121,10 @@ function ProductDetails() {
                 <p className="font-semibold">{hours} Hrs Duration</p>
               </div>
             </div>
-            <a className="font-bold p-4 rounded-md bg-red-300 text-white cursor-pointer" href="/contact">
+            <a
+              className="font-bold p-4 rounded-md bg-red-300 text-white cursor-pointer"
+              href="/contact"
+            >
               Buy Course
             </a>
           </div>
